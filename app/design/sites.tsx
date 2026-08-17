@@ -27,7 +27,13 @@ function Trial(){return <section className="trial-common" id="trial">
 </section>}
 function ScheduleButton({variant}:{variant:string}){return <a className="schedule-page-link" href={`/schedule/${variant}`}>スケジュール専用ページを見る <b>→</b></a>}
 function SchoolIntro({variant}:{variant:string}){return <section className={`added-intro added-${variant}`}><div><small>ABOUT SHINY☆GIRL</small><h2>Shiny☆Girlとは</h2><p>2013年から春日市・大野城市を中心に活動するダンススクールです。ダンスの技術だけでなく、挑戦する気持ち、仲間を思いやる心、自分を信じる力を育てます。</p><p>地域イベントや発表会への出演を通して、一人ひとりの努力が自信と成長につながる環境を大切にしています。</p></div><figure/></section>}
-function InstructorSection({variant}:{variant:string}){const teachers=["SATOMI","めぐみ 先生","まさし 先生","れな 先生","きよ コーチ"];return <section className={`added-teachers added-${variant}`}><header><small>INSTRUCTORS</small><h2>一人ひとりに寄り添う講師陣</h2><p>担当クラスだけでなく、子どもたちへの想いも一人ずつ紹介します。</p></header><div>{teachers.map((name,i)=><article key={name}><span>{String(i+1).padStart(2,"0")}</span><div className="teacher-photo"/><h3>{name}</h3><p>担当・プロフィールは確認後に掲載</p></article>)}</div></section>}
+function InstructorSection({variant}:{variant:string}){const teachers=[
+  {name:"SATOMI",image:"/teacher-satomi.png"},
+  {name:"めぐみ 先生",image:"/teacher-megumi.png"},
+  {name:"まさし 先生",image:"/teacher-masashi.png"},
+  {name:"れな 先生",image:"/teacher-rena.png"},
+  {name:"きよ コーチ",image:"/teacher-kiyo.png"},
+];return <section className={`added-teachers added-${variant}`}><header><small>INSTRUCTORS</small><h2>一人ひとりに寄り添う講師陣</h2><p>担当クラスだけでなく、子どもたちへの想いも一人ずつ紹介します。</p></header><div>{teachers.map((teacher,i)=><article key={teacher.name}><span>{String(i+1).padStart(2,"0")}</span><div className="teacher-photo" style={{backgroundImage:`url(${teacher.image})`}}/><h3>{teacher.name}</h3><p>担当・プロフィールは確認後に掲載</p></article>)}</div></section>}
 function EventSection({variant}:{variant:string}){return <section className={`added-events added-${variant}`}><figure/><div><small>EVENT & INSTAGRAM</small><h2>仲間と頑張った経験を、<br/>大きな自信へ。</h2><p>発表会や地域イベントへの出演、コンテストへの挑戦など、子どもたちの活動を写真で紹介します。Instagramの最新投稿とも連携予定です。</p><a href="https://www.instagram.com/lalaoonojyoukyoushithu/">Instagramを見る →</a></div></section>}
 
 export function ElegantSite(){return <div className="design elegant">
