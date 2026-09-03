@@ -1141,11 +1141,16 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
   .trial-flow>.flow-arrow{height:44px!important;transform:none!important;font-size:0!important}
   .trial-flow>.flow-arrow:before{content:"↓";font-size:28px;line-height:44px}
 
-  .footer-information .footer-trial-card{
-    min-height:560px!important;
-    background-size:auto 100%!important;
-    background-position:right bottom!important;
-    background-repeat:no-repeat!important;
+  .footer-information .footer-trial-card{min-height:0!important}
+  .footer-information .footer-trial-card>figure{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:310px!important;
+    min-height:310px!important;
+    aspect-ratio:auto!important;
+    background-position:72% 24%!important;
+    background-size:cover!important;
   }
   .footer-information .footer-trial-card:after{
     background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.98) 43%,rgba(255,255,255,.55) 62%,rgba(255,255,255,.03) 82%)!important;
