@@ -1037,3 +1037,61 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
   color:var(--brand-ink)
 }
 .dynamic .d-hero h1 .hero-line em{color:#ed416e}
+
+/* Mobile copy rhythm and navigation consistency */
+.readable-copy span{display:block}
+
+@media(max-width:767px){
+  .mobile-menu a:last-child{
+    border-radius:0!important;
+    background:transparent!important;
+    color:#513f46!important;
+    text-align:left!important;
+  }
+
+  .dynamic .d-hero{
+    display:grid!important;
+    grid-template-rows:minmax(320px,47vh) auto!important;
+    min-height:0!important;
+    background:#fff!important;
+  }
+  .dynamic .d-hero figure{
+    position:relative!important;
+    inset:auto!important;
+    grid-row:1!important;
+    width:100%!important;
+    height:100%!important;
+    background-position:61% 18%!important;
+    animation:none!important;
+  }
+  .dynamic .d-hero:after{
+    display:block!important;
+    grid-row:1!important;
+    background:linear-gradient(0deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,0) 35%)!important;
+  }
+  .dynamic .d-hero>div{
+    position:relative!important;
+    inset:auto!important;
+    grid-row:2!important;
+    width:100%!important;
+    padding:34px 22px 46px!important;
+    gap:0!important;
+    align-items:center!important;
+    text-align:center!important;
+    background:#fff!important;
+  }
+  .dynamic .d-hero>div>p{margin:0 0 12px!important}
+  .dynamic .d-hero h1{margin:0 0 18px!important;line-height:1.38!important}
+  .dynamic .d-hero h2{margin:0!important;line-height:1.65!important}
+  .dynamic .d-hero a{margin-top:24px!important}
+
+  .readable-copy span{display:inline}
+  .readable-copy span:after{content:"\A";white-space:pre}
+  .d-about-copy p,.d-reasons>header p{line-height:2!important}
+}
+
+@media(max-width:420px){
+  .dynamic .d-hero{grid-template-rows:300px auto!important}
+  .dynamic .d-hero figure{background-position:62% 14%!important}
+  .dynamic .d-hero>div{padding:30px 18px 42px!important}
+}

@@ -354,9 +354,9 @@ export function DynamicSite(){return <div className="design dynamic">
 <figure/>
 <div>
 <p>BEGIN YOUR STORY</p>
-<h1><span className="hero-line">未経験でも<em>安心。</em></span><span className="hero-line">一人ひとりの</span><span className="hero-line">「できた！」を大切に。</span></h1>
+<h1><span className="hero-line">未経験でも<em>安心</em></span><span className="hero-line">一人ひとりの</span><span className="hero-line">「できた！」を大切に</span></h1>
 <h2>小さな努力を、<br/>自信と成長へ</h2>
-<a href="#trial">無料体験に申し込む　→</a>
+<a href="#trial">無料体験に申し込む</a>
 </div>
 </section>
 <section className="d-about" id="growth">
@@ -366,17 +366,17 @@ export function DynamicSite(){return <div className="design dynamic">
 <span>一人ひとりのペースを大切に</span>
 </div>
 <div className="d-about-copy">
-<h2><span>一人ひとりに寄り添う、</span><em>ダンススクール。</em></h2>
+<h2><span>一人ひとりに寄り添う</span><em>ダンススクール</em></h2>
 <p className="d-about-lead">初めての一歩から、その子らしい成長まで。</p>
-<p>SHINY☆GIRLは、幼稚園児から小学校低学年の未経験のお子さまも安心して始められるダンススクールです。年齢や経験だけでなく、一人ひとりの性格やペースにも目を向けながら、丁寧にレッスンを進めます。</p>
-<p>できなかったことが少しずつできるようになる。その小さな積み重ねを大切にし、ダンスを通して自信と成長につなげていきます。</p>
+<p className="readable-copy"><span>SHINY☆GIRLは、幼稚園児から小学校低学年の未経験のお子さまも</span><span>安心して始められるダンススクールです。</span><span>年齢や経験だけでなく、一人ひとりの性格やペースにも目を向けながら、</span><span>丁寧にレッスンを進めます。</span></p>
+<p className="readable-copy"><span>できなかったことが、少しずつできるようになる。</span><span>その小さな積み重ねを大切にし、</span><span>ダンスを通して自信と成長につなげていきます。</span></p>
 </div>
 </section>
 <section className="d-reasons" id="reasons">
 <header>
 <small>02　WHY SHINY☆GIRL</small>
-<h2>SHINY☆GIRLが<br/><em>選ばれる理由。</em></h2>
-<p>保護者の方にも、お子さまにも安心して通っていただける環境を大切にしています。</p>
+<h2>SHINY☆GIRLが<br/><em>選ばれる理由</em></h2>
+<p className="readable-copy"><span>保護者の方にも、お子さまにも安心して</span><span>通っていただける環境を大切にしています。</span></p>
 </header>
 <div>
 <article>
