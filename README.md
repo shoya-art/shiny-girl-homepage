@@ -1,4 +1,10 @@
-# vinext-starter
+# Shiny Girl ホームページ デザイン提案
+
+ローカルで確認する場合は、同じフォルダにある `ローカル確認.command` をダブルクリックしてください。詳しい手順は `ローカル確認方法.md` にまとめています。
+
+普段の修正確認はローカルで行い、内容が確定した段階でのみGitHubへコミット・プッシュする運用です。
+
+## 開発者向け情報
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and

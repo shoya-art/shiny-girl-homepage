@@ -1,10 +1,24 @@
 const studio=[
-  ["月","16:00–16:45","プリサクダンス","初心者"],["月","17:00–17:45","アイドル 初級","初心者"],["火","18:15–19:15","K-POP 中級",""],["水","16:00–16:45","体操基礎［短期］","短期"],["水","17:00–18:00","体操中級［短期］","短期"],["水","18:15–19:15","JAZZ 初中級","★"],["木","17:00–18:00","チア初級","★★"],["木","18:10–19:10","ロック",""],["金","18:15–19:15","キッズダンス低学年","★★"],["土","12:30–13:00","egg","0〜3歳"],["土","16:45–17:45","K-POP 初級","初心者"]
+  ["月","16:00–16:45","プリサクダンス","幼児・初心者"],["月","17:00–17:45","アイドル 初級","初心者"],
+  ["火","17:00–18:00","体操初級［短期］","短期"],["火","18:15–19:15","K-POP 中級","経験者"],["火","19:30–20:30","チア初中級","基礎〜中級"],["火","20:35–21:35","チアテクニック","経験者"],
+  ["水","16:00–16:45","体操基礎［短期］","短期"],["水","17:00–18:00","体操中級［短期］","短期"],["水","18:15–19:15","JAZZ 初中級","優先イベントクラス"],["水","19:30–20:30","JAZZ 基礎［大会］","大会クラス"],["水","20:45–21:45","JAZZ 上級","優先イベントクラス"],
+  ["木","17:00–18:00","チア初級","優先イベントクラス"],["木","18:10–19:10","ロック","基礎〜中級"],["木","19:20–20:30","JAZZ・JAZZ Girls 初中級","小学生・中学生〜"],["木","20:45–21:45","JAZZ・JAZZ Girls 中上級","中学生〜"],
+  ["金","18:15–19:15","キッズダンス低学年","小1〜小3"],["金","19:30–20:30","イベントダンス高学年","小4〜小6"],["金","20:45–21:45","ブレイク","基礎〜中級"],
+  ["土","12:30–13:00","egg","0〜3歳"],["土","13:15–14:45","アクロ初中級［満席］","満席"],["土","15:00–16:30","新体操 小・中級","基礎〜中級"],["土","16:45–17:45","K-POP 初級","優先イベントクラス"],["土","18:00–19:00","K-POP 中級","第一優先イベントクラス"],["土","19:15–20:15","リリカルJAZZ①","中学生以上"],["土","20:30–21:30","リリカルJAZZ②","高校生以上"]
 ];
-const halls=[["中大利公民館","ジュエル","火曜 18:15–19:00"],["上大利公民館","バニー／ドール","水曜 17:30–19:30"],["篠栗町乙犬公民館","パール／ルビー／ビジュー","火曜 15:45–18:30"],["高宮小学校体育館","チア／アクロ","水・金曜"],["賀茂小学校体育館","チア","火曜 19:30–20:20"],["糸島前原南コミュニティセンター","チア／アクロ","水・木曜"]];
-const faq=["ダンスが初めてでも大丈夫ですか？","何歳から参加できますか？","男の子も参加できますか？","どのクラスを選べばよいですか？","体験レッスンの料金はいくらですか？","体験レッスンの持ち物は何ですか？","レッスン時の服装を教えてください。","保護者の見学や付き添いは必要ですか？","発表会への参加は必須ですか？","発表会には別途費用がかかりますか？","欠席した場合の振替はできますか？","レッスン日の変更や休講はどこで確認できますか？","入会金や設備費はかかりますか？","複数のクラスを受講できますか？","駐車場はありますか？"];
-function Logo(){return <a href="#top" className="sg-logo">SHINY<span>☆</span>GIRL<small>DANCE SCHOOL</small>
-</a>}
+const halls=[["中大利公民館","ジュエル","火曜 18:15–19:00"],["上大利公民館","バニー","水曜 17:30–18:15"],["上大利公民館","ドール","水曜 18:30–19:30"],["篠栗町乙犬公民館","パール","火曜 15:45–16:30"],["篠栗町乙犬公民館","ルビー","火曜 16:45–17:30"],["篠栗町乙犬公民館","ビジュー","火曜 17:40–18:30"],["篠栗町乙犬公民館","アクロ","火曜 18:45–20:45"],["高宮小学校体育館","チア","金曜 17:00–17:45"],["高宮小学校体育館","アクロ","水曜 17:00–18:00"],["賀茂小学校体育館","チア","火曜 19:30–20:20"],["糸島前原南コミュニティセンター","チア","水曜 18:00–18:50"],["糸島前原南コミュニティセンター","アクロ","水曜 19:00–19:50"]];
+const classGuides=[
+  {name:"egg・幼児クラス",target:"0歳〜幼児",image:"/class-preschool-v4.png",text:"音楽に合わせて体を動かし、リズム感や表現する楽しさを育てる入門クラスです。"},
+  {name:"キッズダンス",target:"幼児〜小学生",image:"/class-kids-v2.png",text:"ダンスの基本動作を楽しく学びながら、体力・リズム感・自信を身につけます。"},
+  {name:"K-POP",target:"小学生〜",image:"/class-kpop.png",text:"人気の楽曲に合わせて、振付や見せ方を楽しみながら習得するクラスです。"},
+  {name:"JAZZ・JAZZ Girls",target:"小学生・中学生〜",image:"/class-jazz.png",text:"基礎を大切にしながら、しなやかな動きと豊かな表現力を育てます。"},
+  {name:"チア",target:"幼児〜小学生",image:"/class-cheer.png",text:"元気なダンスとチームワークを通して、笑顔・協調性・挑戦する力を育てます。"},
+  {name:"体操・新体操・アクロ",target:"年齢・レベル別",image:"/class-acro.png",text:"柔軟性や体の使い方から丁寧に学び、安全に技の習得を目指します。"},
+  {name:"ロック・ブレイク",target:"小学生〜",image:"/class-lock-break-v2.png",text:"リズムの取り方や基礎ステップから学び、力強く個性的な表現につなげます。"},
+  {name:"イベント・大会クラス",target:"選抜・経験者",image:"/class-event-v2.png",text:"発表会やイベント、大会に向けて、仲間と作品をつくり上げるクラスです。"},
+];
+const faq=["ダンスが初めてでも大丈夫ですか？","何歳から参加できますか？","どのクラスを選べばよいですか？","体験レッスンの料金はいくらですか？","体験レッスンの持ち物は何ですか？","レッスン時の服装を教えてください。","保護者の見学や付き添いは必要ですか？","発表会への参加は必須ですか？","発表会には別途費用がかかりますか？","欠席した場合の振替はできますか？","レッスン日の変更や休講はどこで確認できますか？","入会金や設備費はかかりますか？","複数のクラスを受講できますか？","駐車場はありますか？"];
+function Logo(){return <a href="#top" className="sg-logo" aria-label="Shiny Girl Dance School トップへ"><img src="/shinygirl-logo-official.png" alt="Shiny☆Girl"/></a>}
 function Back(){return <a className="back" href="/">← 3案の比較に戻る</a>}
 function FAQ(){return <div className="faq-list">{faq.map(q=>
 <details key={q}>
@@ -13,27 +27,39 @@ function FAQ(){return <div className="faq-list">{faq.map(q=>
 <p>詳しい内容は代表者確認後に掲載します。</p>
 </details>)}</div>}
 function HallList(){return <div className="hall-list">{halls.map(h=>
-<article key={h[0]}>
+<article key={h.join()}>
 <small>{h[0]}</small>
 <h4>{h[1]}</h4>
 <p>{h[2]}</p>
 </article>)}</div>}
+function CommunityTimetable(){const days=["火","水","金"];return <div className="community-calendar-scroll"><div className="community-calendar">{days.map(day=><article key={day}><h3>{day}<small>曜日</small></h3>{halls.filter(h=>h[2].startsWith(`${day}曜`)).map(h=><p key={h.join()}><time>{h[2].replace(`${day}曜 `,"")}</time><b>{h[1]}</b><span>{h[0]}</span></p>)}</article>)}</div></div>}
 function Trial(){return <section className="trial-common" id="trial">
+<figure className="trial-photo" aria-label="レッスンを楽しむ女の子たち"/>
+<div className="trial-copy">
 <p>FIRST STEP</p>
-<h2>はじめての一歩を、<br/>Shiny☆Girlで。</h2>
+<h2>はじめての日が、<br/>楽しみになる。</h2>
+<span className="trial-lead">「やってみたい！」の気持ちを大切に。まずは無料体験で、教室の雰囲気を感じてみてください。</span>
 <a href="#">無料体験に申し込む <b>→</b>
 </a>
 <small>公式LINEから簡単にお申し込みいただけます</small>
+</div>
 </section>}
-function ScheduleButton({variant}:{variant:string}){return <a className="schedule-page-link" href={`/schedule/${variant}`}>スケジュール専用ページを見る <b>→</b></a>}
+function TrialFlow(){return <section className="trial-flow-section" aria-labelledby="trial-flow-title">
+<header><small>HOW TO JOIN</small><h2 id="trial-flow-title">無料体験までの、<br/><em>かんたん3ステップ。</em></h2><p>お申し込みから体験当日まで、公式LINEで分かりやすくご案内します。</p></header>
+<div className="trial-flow">
+<article><b>STEP 1</b><figure className="flow-illustration" style={{backgroundImage:"url('/trial-step-line-photo-v2.png')"}}/><span>無料体験に申し込む</span><small>ボタンから公式LINEへ</small></article><i className="flow-arrow" aria-hidden="true">→</i>
+<article><b>STEP 2</b><figure className="flow-illustration" style={{backgroundImage:"url('/trial-step-date-photo-v2.png')"}}/><span>LINEで日時を確定</span><small>教室・クラスを相談</small></article><i className="flow-arrow" aria-hidden="true">→</i>
+<article><b>STEP 3</b><figure className="flow-illustration" style={{backgroundImage:"url('/trial-step-dance-photo-v2.png')"}}/><span>当日、無料体験へ</span><small>動きやすい服装で参加</small></article>
+</div>
+</section>}
 function SchoolIntro({variant}:{variant:string}){return <section className={`added-intro added-${variant}`}><div><small>ABOUT SHINY☆GIRL</small><h2>Shiny☆Girlとは</h2><p>2013年から春日市・大野城市を中心に活動するダンススクールです。ダンスの技術だけでなく、挑戦する気持ち、仲間を思いやる心、自分を信じる力を育てます。</p><p>地域イベントや発表会への出演を通して、一人ひとりの努力が自信と成長につながる環境を大切にしています。</p></div><figure/></section>}
 function InstructorSection({variant}:{variant:string}){const teachers=[
-  {name:"SATOMI",image:"/teacher-satomi.png"},
-  {name:"めぐみ 先生",image:"/teacher-megumi.png"},
-  {name:"まさし 先生",image:"/teacher-masashi.png"},
-  {name:"れな 先生",image:"/teacher-rena.png"},
-  {name:"きよ コーチ",image:"/teacher-kiyo.png"},
-];return <section className={`added-teachers added-${variant}`}><header><small>INSTRUCTORS</small><h2>一人ひとりに寄り添う講師陣</h2><p>担当クラスだけでなく、子どもたちへの想いも一人ずつ紹介します。</p></header><div>{teachers.map((teacher,i)=><article key={teacher.name}><span>{String(i+1).padStart(2,"0")}</span><div className="teacher-photo" style={{backgroundImage:`url(${teacher.image})`}}/><h3>{teacher.name}</h3><p>担当・プロフィールは確認後に掲載</p></article>)}</div></section>}
+  {name:"SATOMI",role:"代表・ダンス",image:"/instructor-satomi.jpg"},
+  {name:"めぐみ 先生",role:"バレエ",image:"/instructor-megumi.jpg"},
+  {name:"まさし 先生",role:"ヒップホップ＆ロック",image:"/instructor-masashi.jpg"},
+  {name:"れな 先生",role:"フィジカルトレーナー",image:"/instructor-rena.jpg"},
+  {name:"きよ コーチ",role:"新体操＆アクロバット",image:"/instructor-kiyo.jpg"},
+];return <section className={`added-teachers added-${variant}`} id="instructors"><header><small>INSTRUCTORS</small><h2><span>一人ひとりに寄り添う</span><span>講師陣</span></h2><p>経験豊富な講師が、それぞれの専門性を活かしてレッスンを行います。講師本人の想いは、確認後に一人ずつ掲載します。</p></header><div>{teachers.map((teacher,i)=><article key={teacher.name}><span>{String(i+1).padStart(2,"0")}</span><div className="teacher-photo" style={{backgroundImage:`url(${teacher.image})`}}/><small>{teacher.role}</small><h3>{teacher.name}</h3><div className="teacher-message"><b>MESSAGE</b><p>子どもたちへの想い・指導で大切にしていることを確認後に掲載</p></div></article>)}</div></section>}
 function EventSection({variant}:{variant:string}){return <section className={`added-events added-${variant}`}><figure/><div><small>EVENT & INSTAGRAM</small><h2>仲間と頑張った経験を、<br/>大きな自信へ。</h2><p>発表会や地域イベントへの出演、コンテストへの挑戦など、子どもたちの活動を写真で紹介します。Instagramの最新投稿とも連携予定です。</p><a href="https://www.instagram.com/lalaoonojyoukyoushithu/">Instagramを見る →</a></div></section>}
 
 export function ElegantSite(){return <div className="design elegant">
@@ -122,7 +148,6 @@ export function ElegantSite(){return <div className="design elegant">
 </article>)}</div>
 <h3 className="sub-title">公民館・体育館クラス</h3>
 <HallList/>
-<ScheduleButton variant="elegant"/>
 </section>
 <section className="e-teacher" id="teacher">
 <div/>
@@ -259,7 +284,6 @@ export function FriendlySite(){return <div className="design friendly">
 </article>)}</div>
 <h3 className="sub-title">公民館・体育館から探す</h3>
 <HallList/>
-<ScheduleButton variant="friendly"/>
 </section>
 <section className="f-voices">
 <header>
@@ -302,15 +326,27 @@ export function FriendlySite(){return <div className="design friendly">
 </div>}
 
 export function DynamicSite(){return <div className="design dynamic">
-<Back/>
 <header className="d-head" id="top">
 <Logo/>
 <nav>
-<a href="#growth">私たちの想い</a>
+<a href="#growth">スクールについて</a>
 <a href="#d-class">クラス</a>
 <a href="#d-schedule">スケジュール</a>
+<a href="#instructors">講師</a>
 <a href="#d-faq">FAQ</a>
+<a href="#trial">無料体験</a>
 </nav>
+<details className="mobile-menu">
+<summary>MENU</summary>
+<div>
+<a href="#growth">スクールについて</a>
+<a href="#d-class">クラス</a>
+<a href="#d-schedule">スケジュール</a>
+<a href="#instructors">講師</a>
+<a href="#d-faq">FAQ</a>
+<a href="#trial">無料体験</a>
+</div>
+</details>
 <a className="head-cta" href="#trial">無料体験に申し込む</a>
 </header>
 <main>
@@ -318,96 +354,112 @@ export function DynamicSite(){return <div className="design dynamic">
 <figure/>
 <div>
 <p>BEGIN YOUR STORY</p>
-<h1>未経験でも<span>安心。</span>
-<br/>一人ひとりの<br/>「できた！」を大切に。</h1>
+<h1><span className="hero-line">未経験でも<em>安心。</em></span><span className="hero-line">一人ひとりの</span><span className="hero-line">「できた！」を大切に。</span></h1>
 <h2>小さな努力を、<br/>自信と成長へ</h2>
 <a href="#trial">無料体験に申し込む　→</a>
 </div>
 </section>
-<div className="d-marquee">
-<span>ENJOY</span>
-<b>できた！</b>
-<span>CHALLENGE</span>
-<b>成長</b>
-<span>SHINE</span>
+<section className="d-about" id="growth">
+<figure className="d-about-photo" aria-label="一人ひとりに寄り添うレッスンの様子"/>
+<div className="d-section-mark">
+<small>01　ABOUT SHINY☆GIRL</small>
+<span>一人ひとりのペースを大切に</span>
 </div>
-<section className="d-growth" id="growth">
+<div className="d-about-copy">
+<h2><span>一人ひとりに寄り添う、</span><em>ダンススクール。</em></h2>
+<p className="d-about-lead">初めての一歩から、その子らしい成長まで。</p>
+<p>SHINY☆GIRLは、幼稚園児から小学校低学年の未経験のお子さまも安心して始められるダンススクールです。年齢や経験だけでなく、一人ひとりの性格やペースにも目を向けながら、丁寧にレッスンを進めます。</p>
+<p>できなかったことが少しずつできるようになる。その小さな積み重ねを大切にし、ダンスを通して自信と成長につなげていきます。</p>
+</div>
+</section>
+<section className="d-reasons" id="reasons">
 <header>
-<small>WHY SHINY☆GIRL</small>
-<h2>努力するって、<br/>
-<em>楽しい。</em>
-</h2>
+<small>02　WHY SHINY☆GIRL</small>
+<h2>SHINY☆GIRLが<br/><em>選ばれる理由。</em></h2>
+<p>保護者の方にも、お子さまにも安心して通っていただける環境を大切にしています。</p>
 </header>
 <div>
 <article>
+<figure className="reason-photo" style={{backgroundImage:"url('/reason-beginner.png')"}}/>
 <b>01</b>
-<h3>初めてを、楽しむ</h3>
-<p>できないことがあっても大丈夫。挑戦する気持ちを大切にします。</p>
+<small>FOR BEGINNERS</small>
+<h3>未経験でも安心の<br/>丁寧なレッスン</h3>
+<p>基礎から無理なく進めるため、ダンスが初めてのお子さまも安心して参加できます。</p>
 </article>
 <article>
+<figure className="reason-photo" style={{backgroundImage:"url('/reason-support.png')"}}/>
 <b>02</b>
-<h3>個性を、伸ばす</h3>
-<p>一人ひとりに合った言葉とサポートで、自分らしさを育てます。</p>
+<small>PERSONAL SUPPORT</small>
+<h3>一人ひとりに合わせた<br/>声かけとサポート</h3>
+<p>年齢・性格・習熟度を見ながら、その子に合った伝え方で成長を支えます。</p>
 </article>
 <article>
+<figure className="reason-photo" style={{backgroundImage:"url('/reason-confidence.png')"}}/>
 <b>03</b>
-<h3>努力を、舞台へ</h3>
-<p>発表会や地域イベントで、積み重ねた成果を実感します。</p>
+<small>SMALL SUCCESS</small>
+<h3>小さな「できた！」を<br/>自信と成長へ</h3>
+<p>結果だけでなく努力の過程も認め、挑戦する気持ちと自信を育てます。</p>
+</article>
+<article>
+<figure className="reason-photo" style={{backgroundImage:"url('/reason-local-v2.png')"}}/>
+<b>04</b>
+<small>LOCAL SCHOOL</small>
+<h3>身近な教室から<br/>通い方を選べる</h3>
+<p>大野城スタジオと地域の公民館・体育館から、通いやすい教室を選べます。</p>
 </article>
 </div>
-</section>
-<section className="d-stats">
-<span>
-<b>2013</b> SINCE</span>
-<span>
-<b>29</b> CLASSES</span>
-<span>
-<b>200</b> MEMBERS</span>
 </section>
 <section className="d-classes" id="d-class">
 <header>
 <small>CLASSES</small>
-<h2>好きが見つかる。<br/>夢中になれる。</h2>
+<h2>年齢や目的に合った、<br/>クラスが見つかる。</h2>
+<p>初めてダンスに触れる幼児クラスから、イベントや大会を目指すクラスまで。年齢・経験・興味に合わせて選べます。</p>
 </header>
-<div>{studio.slice(0,8).map((c,i)=>
-<article key={c.join()}>
+<div>{classGuides.map((c,i)=>
+<article key={c.name}>
+<figure className="class-photo" style={{backgroundImage:`url(${c.image})`}}/>
 <span>0{i+1}</span>
 <div>
-<small>{c[0]}曜日　{c[1]}</small>
-<h3>{c[2]}</h3>
+<small>{c.target}</small>
+<h3>{c.name}</h3>
+<p>{c.text}</p>
 </div>
-<em>{c[3]}</em>
 <b>→</b>
 </article>)}</div>
 </section>
 <section className="d-schedule" id="d-schedule">
 <header>
 <small>WEEKLY SCHEDULE</small>
-<h2>今週のレッスン</h2>
+<h2>レッスンスケジュール</h2>
+<p>曜日ごとのレッスンを一覧で確認できます。体験可能なクラスは公式LINEからお問い合わせください。</p>
 </header>
-<div>{["月","火","水","木","金","土"].map(d=>
+<figure className="schedule-section-photo schedule-studio-photo" aria-label="大野城スタジオでレッスンを楽しむ女の子たち"/>
+<h3 className="schedule-location-title"><span>MAIN STUDIO</span>Shiny Dance Studio 大野城</h3>
+<p className="timetable-hint">横にスクロールして、曜日ごとの時間割をご確認いただけます。</p>
+<div className="timetable-scroll"><div className="timetable-grid">{["月","火","水","木","金","土"].map(d=>
 <article key={d}>
 <h3>{d}<small>曜日</small>
 </h3>{studio.filter(c=>c[0]===d).map(c=>
 <p key={c.join()}>
 <time>{c[1]}</time>
 <b>{c[2]}</b>
-</p>)}</article>)}</div>
+</p>)}</article>)}</div></div>
 <h3 className="sub-title">OTHER LOCATIONS</h3>
-<HallList/>
-<ScheduleButton variant="dynamic"/>
+<p className="location-lead">公民館・小学校体育館・コミュニティセンターのクラス</p>
+<figure className="schedule-section-photo schedule-community-photo" aria-label="地域の教室でレッスンを楽しむ女の子たち"/>
+<CommunityTimetable/>
 </section>
 <section className="d-event">
 <div>
 <small>EVENT & PERFORMANCE</small>
-<h2>努力が、<br/>スポットライトに変わる。</h2>
-<p>地域イベントや発表会への出演を通して、仲間と頑張った経験を大きな自信へ。</p>
+<h2><span>発表会やイベントも、</span><span>成長の大切な時間。</span></h2>
+<p>このセクションでは、日々のレッスンだけでは伝わらない、子どもたちの挑戦や成長の機会を紹介します。</p>
+<ul><li>練習の成果を発表する経験</li><li>仲間と一つの作品をつくる経験</li><li>頑張ったことが自信につながる経験</li></ul>
 </div>
 <figure/>
 </section>
-<SchoolIntro variant="dynamic"/>
 <InstructorSection variant="dynamic"/>
-<section className="d-price">
+<section className="d-price" id="price">
 <header>
 <small>PRICE</small>
 <h2>料金</h2>
@@ -422,11 +474,25 @@ export function DynamicSite(){return <div className="design dynamic">
 <section className="d-faq" id="d-faq">
 <header>
 <small>FAQ</small>
-<h2>気になること。</h2>
+<h2>よくあるご質問</h2>
+<p>体験レッスンやクラス、発表会について、よくいただく質問をまとめています。</p>
 </header>
 <FAQ/>
 </section>
+<section className="d-news" id="news">
+<header><small>NEWS & TOPICS</small><h2>お知らせ</h2><p>休講・振替、短期レッスン、イベントなどの最新情報をお届けします。</p></header>
+<div>
+<article><figure style={{backgroundImage:"url('/news-closure-v1.png')"}}/><div><time>NEWS</time><h3>休講・振替のお知らせ</h3><p>お盆休みや年末年始など、スクールのお休み情報を掲載します。</p><span>内容確認後に掲載　→</span></div></article>
+<article><figure style={{backgroundImage:"url('/news-schedule-v1.png')"}}/><div><time>SCHEDULE</time><h3>最新レッスンスケジュール</h3><p>クラスの時間変更や短期レッスンの開催情報を掲載します。</p><span>内容確認後に掲載　→</span></div></article>
+<article><figure style={{backgroundImage:"url('/news-event-v1.png')"}}/><div><time>EVENT</time><h3>イベント・発表会情報</h3><p>出演予定や参加イベント、当日のご案内を掲載します。</p><span>内容確認後に掲載　→</span></div></article>
+</div>
+</section>
+<TrialFlow/>
 <Trial/>
+<section className="footer-information" aria-label="アクセスと無料体験">
+<article className="footer-access"><div><small>ACCESS</small><h2>アクセス</h2><h3>Shiny Dance Studio</h3><p>イオン大野城ショッピングセンター 2F<br/>福岡県大野城市錦町4丁目1-1</p><a href="https://maps.google.com/?q=福岡県大野城市錦町4丁目1-1">地図を確認する　→</a></div><iframe title="Shiny Dance Studio周辺地図" src="https://www.google.com/maps?q=福岡県大野城市錦町4丁目1-1&output=embed" loading="lazy"/></article>
+<article className="footer-trial-card"><div><small>TRIAL LESSON</small><h2>まずは<span>無料体験</span>へ！</h2><p>お子さまの「やってみたい！」を応援します。</p><a href="#trial">無料体験に申し込む　→</a><em>随時受付中！お気軽にご参加ください</em></div><figure aria-label="無料体験を案内する女の子"/></article>
+</section>
 </main>
 <footer>
 <Logo/>
@@ -434,4 +500,4 @@ export function DynamicSite(){return <div className="design dynamic">
 </footer>
 </div>}
 
-export function ScheduleSite({variant}:{variant:"elegant"|"friendly"|"dynamic"}){const title=variant==="elegant"?"安心・信頼":variant==="friendly"?"親しみ・楽しさ":"成長・躍動感";return <div className={`schedule-site schedule-${variant}`}><header><Logo/><div><small>{title}デザイン</small><a href={`/design/${variant}`}>トップページへ戻る</a></div></header><main><section className="schedule-title"><p>LESSON SCHEDULE</p><h1>レッスンスケジュール</h1><span>曜日・時間・会場から、お子さまに合うクラスをお探しいただけます。</span></section><nav className="schedule-nav"><a href="#studio">Shiny Dance Studio</a><a href="#community">公民館・体育館クラス</a><a href="#notes">料金・ご案内</a></nav><section className="studio-schedule" id="studio"><header><small>STUDIO LESSON</small><h2>Shiny Dance Studio</h2><p>曜日ごとに、時間・クラス・対象の目安を掲載しています。</p></header><div className="schedule-legend"><span>初心者向け</span><span>★ イベント優先</span><span>★★ 大会優先</span></div><div className="schedule-table"><div className="table-head"><b>曜日</b><b>時間</b><b>クラス</b><b>対象・区分</b><b>講師</b></div>{studio.map(c=><article key={c.join()}><b>{c[0]}曜日</b><time>{c[1]}</time><h3>{c[2]}</h3><em>{c[3]||"通常クラス"}</em><span>確認中</span></article>)}</div></section><section className="community-schedule" id="community"><header><small>COMMUNITY CLASS LESSON</small><h2>公民館・体育館クラス</h2><p>会場ごとに、開講クラスと曜日・時間を掲載しています。</p></header><div>{halls.map(h=><article key={h[0]}><div><small>会場</small><h3>{h[0]}</h3></div><div><small>クラス</small><b>{h[1]}</b></div><div><small>曜日・時間</small><b>{h[2]}</b></div><div><small>講師・対象</small><b>確認中</b></div></article>)}</div></section><section className="schedule-notes" id="notes"><div><small>PRICE</small><h2>料金について</h2><p>Shiny Dance Studioと公民館・体育館クラスに分けて掲載予定です。</p><b>料金確認中</b></div><div><small>TRIAL LESSON</small><h2>体験をご希望の方へ</h2><p>お子さまの年齢や経験をLINEでお知らせください。おすすめのクラスをご案内します。</p><a href="#">無料体験に申し込む →</a></div></section></main><footer><Logo/><small>© Shiny☆Girl</small></footer></div>}
+export function ScheduleSite({variant}:{variant:"elegant"|"friendly"|"dynamic"}){const title=variant==="elegant"?"安心・信頼":variant==="friendly"?"親しみ・楽しさ":"成長・躍動感";return <div className={`schedule-site schedule-${variant}`}><header><Logo/><div><small>{title}デザイン</small><a href={`/design/${variant}`}>トップページへ戻る</a></div></header><main><section className="schedule-title"><p>LESSON SCHEDULE</p><h1>レッスンスケジュール</h1><span>曜日・時間・会場から、お子さまに合うクラスをお探しいただけます。</span></section><nav className="schedule-nav"><a href="#studio">Shiny Dance Studio</a><a href="#community">公民館・体育館クラス</a><a href="#notes">料金・ご案内</a></nav><section className="studio-schedule" id="studio"><header><small>STUDIO LESSON</small><h2>Shiny Dance Studio</h2><p>曜日ごとに、時間・クラス・対象の目安を掲載しています。</p></header><div className="schedule-legend"><span>初心者向け</span><span>★ イベント優先</span><span>★★ 大会優先</span></div><div className="schedule-table"><div className="table-head"><b>曜日</b><b>時間</b><b>クラス</b><b>対象・区分</b><b>講師</b></div>{studio.map(c=><article key={c.join()}><b>{c[0]}曜日</b><time>{c[1]}</time><h3>{c[2]}</h3><em>{c[3]||"通常クラス"}</em><span>確認中</span></article>)}</div></section><section className="community-schedule" id="community"><header><small>COMMUNITY CLASS LESSON</small><h2>公民館・体育館クラス</h2><p>会場ごとに、開講クラスと曜日・時間を掲載しています。</p></header><div>{halls.map(h=><article key={h.join()}><div><small>会場</small><h3>{h[0]}</h3></div><div><small>クラス</small><b>{h[1]}</b></div><div><small>曜日・時間</small><b>{h[2]}</b></div><div><small>講師・対象</small><b>確認中</b></div></article>)}</div></section><section className="schedule-notes" id="notes"><div><small>PRICE</small><h2>料金について</h2><p>Shiny Dance Studioと公民館・体育館クラスに分けて掲載予定です。</p><b>料金確認中</b></div><div><small>TRIAL LESSON</small><h2>体験をご希望の方へ</h2><p>お子さまの年齢や経験をLINEでお知らせください。おすすめのクラスをご案内します。</p><a href="#">無料体験に申し込む →</a></div></section></main><footer><Logo/><small>© Shiny☆Girl</small></footer></div>}
