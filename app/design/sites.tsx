@@ -336,7 +336,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <a href="#trial">無料体験</a>
 </nav>
 <details className="mobile-menu">
-<summary>MENU</summary>
+<summary><i aria-hidden="true"><span/><span/><span/></i>MENU</summary>
 <div>
 <a href="#growth">スクールについて</a>
 <a href="#d-class">クラス</a>
@@ -366,8 +366,8 @@ export function DynamicSite(){return <div className="design dynamic">
 </div>
 <div className="d-about-copy">
 <h2><span>一人ひとりに寄り添う</span><em>ダンススクール</em></h2>
-<p className="d-about-lead">初めての一歩から、その子らしい成長まで。</p>
-<p className="readable-copy"><span>SHINY☆GIRLは、幼稚園児から小学校低学年の未経験のお子さまも</span><span>安心して始められるダンススクールです。</span><span>年齢や経験だけでなく、一人ひとりの性格やペースにも</span><span>目を向けながら丁寧にレッスンを進めます。</span></p>
+<p className="d-about-lead">初めての一歩から、その子らしい成長まで</p>
+<p className="readable-copy"><span>SHINY☆GIRLは、幼稚園児から</span><span>小学校低学年の未経験のお子さまも安心して始められるダンススクールです。</span><span>年齢や経験だけでなく、一人ひとりの性格やペースにも</span><span>目を向けながら丁寧にレッスンを進めます。</span></p>
 <p className="readable-copy"><span>できなかったことが、少しずつできるようになる。</span><span>その小さな積み重ねを大切にし、</span><span>ダンスを通して自信と成長につなげていきます。</span></p>
 </div>
 </section>
@@ -400,7 +400,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <p className="readable-copy"><span>結果だけでなく努力の過程も認め、</span><span>挑戦する気持ちと自信を育てます。</span></p>
 </article>
 <article>
-<figure className="reason-photo" style={{backgroundImage:"url('/reason-local-v2.png')"}}/>
+<figure className="reason-photo" style={{backgroundImage:"url('/reason-local-v3.png')"}}/>
 <b>04</b>
 <small>LOCAL SCHOOL</small>
 <h3>身近な教室から<br/>通い方を選べる</h3>
@@ -447,15 +447,6 @@ export function DynamicSite(){return <div className="design dynamic">
 <figure className="schedule-section-photo schedule-community-photo" aria-label="地域の教室でレッスンを楽しむ女の子たち"/>
 <CommunityTimetable/>
 </section>
-<section className="d-event">
-<div>
-<small>EVENT & PERFORMANCE</small>
-<h2><span>発表会やイベントも、</span><span>成長の大切な時間。</span></h2>
-<p>このセクションでは、日々のレッスンだけでは伝わらない、子どもたちの挑戦や成長の機会を紹介します。</p>
-<ul><li>練習の成果を発表する経験</li><li>仲間と一つの作品をつくる経験</li><li>頑張ったことが自信につながる経験</li></ul>
-</div>
-<figure/>
-</section>
 <InstructorSection variant="dynamic"/>
 <section className="d-price" id="price">
 <header>
@@ -473,7 +464,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <header>
 <small>FAQ</small>
 <h2>よくあるご質問</h2>
-<p>体験レッスンやクラス、発表会について、よくいただく質問をまとめています。</p>
+<p className="readable-copy"><span>体験レッスンやクラス、発表会について</span><span>よくいただく質問をまとめています。</span></p>
 </header>
 <FAQ/>
 </section>
