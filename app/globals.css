@@ -1178,7 +1178,7 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
 
 @media(max-width:600px){
   .footer-information .footer-trial-card>figure{
-    background-size:230% auto!important;
-    background-position:90% 22%!important;
+    background-size:260% auto!important;
+    background-position:96% 20%!important;
   }
 }
