@@ -1182,3 +1182,57 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
     background-position:96% 20%!important;
   }
 }
+
+/* Initial-draft footer CTA: one cohesive photographic panel on desktop. */
+.footer-information .footer-trial-card{
+  position:relative!important;
+  display:flex!important;
+  min-height:430px!important;
+  padding:54px 46px!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  background:#fff url('/footer-trial-photo-v2.png') 76% center/cover no-repeat!important;
+  isolation:isolate;
+}
+.footer-information .footer-trial-card:after{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 41%,rgba(255,255,255,.78) 55%,rgba(255,255,255,.08) 78%)!important;
+}
+.footer-information .footer-trial-card>div{
+  width:min(52%,340px)!important;
+  padding:0!important;
+  text-align:left!important;
+}
+.footer-information .footer-trial-card>figure{display:none!important}
+.footer-information .footer-trial-card h2{margin:8px 0 18px!important}
+.footer-information .footer-trial-card p{margin:0 0 10px!important}
+
+@media(max-width:600px){
+  .footer-information .footer-trial-card{
+    min-height:0!important;
+    padding:46px 24px 42px!important;
+    justify-content:center!important;
+    background:linear-gradient(145deg,#fff 0%,#fff7fa 56%,#ffedf3 100%)!important;
+  }
+  .footer-information .footer-trial-card:before{
+    content:"✦  ✦  ✦";
+    position:absolute;
+    top:22px;
+    color:#e4b26f;
+    font-size:10px;
+    letter-spacing:.55em;
+  }
+  .footer-information .footer-trial-card:after{
+    background:radial-gradient(circle at 86% 14%,rgba(245,123,156,.16),transparent 30%)!important;
+  }
+  .footer-information .footer-trial-card>div{
+    width:100%!important;
+    max-width:320px!important;
+    text-align:center!important;
+  }
+  .footer-information .footer-trial-card a{width:100%!important}
+}
