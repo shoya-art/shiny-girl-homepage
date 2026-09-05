@@ -37,7 +37,7 @@ function Trial(){return <section className="trial-common" id="trial">
 <figure className="trial-photo" aria-label="レッスンを楽しむ女の子たち"/>
 <div className="trial-copy">
 <p>FIRST STEP</p>
-<h2>はじめての日が、<br/>楽しみになる</h2>
+<h2>はじめての日が<br/>楽しみになる</h2>
 <span className="trial-lead">「やってみたい！」の気持ちを大切に。<br/>まずは無料体験で、教室の雰囲気を感じてみてください。</span>
 <a href="#">無料体験に申し込む</a>
 <small>公式LINEから簡単にお申し込みいただけます</small>
