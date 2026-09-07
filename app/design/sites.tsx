@@ -354,7 +354,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <div>
 <p>BEGIN YOUR STORY</p>
 <h1><span className="hero-line">未経験でも<em>安心</em></span><span className="hero-line">一人ひとりの</span><span className="hero-line">「できた！」を大切に</span></h1>
-<h2>小さな努力を、<br/>自信と成長へ</h2>
+<h2 className="hero-subcopy">小さな努力を、自信と成長へ</h2>
 <a href="#trial">無料体験に申し込む</a>
 </div>
 </section>
@@ -367,7 +367,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <div className="d-about-copy">
 <h2><span>一人ひとりに寄り添う</span><em>ダンススクール</em></h2>
 <p className="d-about-lead">初めての一歩から、その子らしい成長まで</p>
-<p className="readable-copy"><span>SHINY☆GIRLは、幼稚園児から</span><span>小学校低学年の未経験のお子さまも安心して始められるダンススクールです。</span><span>年齢や経験だけでなく、一人ひとりの性格やペースにも</span><span>目を向けながら丁寧にレッスンを進めます。</span></p>
+<p className="readable-copy"><span>SHINY☆GIRLは、幼稚園児から小学校低学年の未経験の</span><span>お子さまも安心して始められるダンススクールです。</span><span>年齢や経験だけでなく、一人ひとりの性格やペースにも</span><span>目を向けながら丁寧にレッスンを進めます。</span></p>
 <p className="readable-copy"><span>できなかったことが、少しずつできるようになる。</span><span>その小さな積み重ねを大切にし、</span><span>ダンスを通して自信と成長につなげていきます。</span></p>
 </div>
 </section>
@@ -479,7 +479,7 @@ export function DynamicSite(){return <div className="design dynamic">
 <TrialFlow/>
 <Trial/>
 <section className="footer-information" aria-label="アクセスと無料体験">
-<article className="footer-access"><div><small>ACCESS</small><h2>アクセス</h2><h3>Shiny Dance Studio</h3><p>イオン大野城ショッピングセンター 2F<br/>福岡県大野城市錦町4丁目1-1</p><a href="https://maps.google.com/?q=福岡県大野城市錦町4丁目1-1">地図を確認する　→</a></div><iframe title="Shiny Dance Studio周辺地図" src="https://www.google.com/maps?q=福岡県大野城市錦町4丁目1-1&output=embed" loading="lazy"/></article>
+<article className="footer-access"><div><small>ACCESS</small><h2>アクセス</h2><h3>Shiny Dance Studio</h3><p className="access-address"><span>イオン大野城ショッピングセンター 2F</span><span>福岡県大野城市錦町4丁目1-1</span></p><a href="https://maps.google.com/?q=福岡県大野城市錦町4丁目1-1">地図を確認する　→</a></div><iframe title="Shiny Dance Studio周辺地図" src="https://www.google.com/maps?q=福岡県大野城市錦町4丁目1-1&output=embed" loading="lazy"/></article>
 <article className="footer-trial-card"><div><small>TRIAL LESSON</small><h2>まずは<span>無料体験</span>へ！</h2><p>お子さまの「やってみたい！」を応援します。</p><a href="#trial">無料体験に申し込む</a><em>随時受付中！お気軽にご参加ください</em></div><figure aria-label="無料体験を案内する女の子"/></article>
 </section>
 </main>

@@ -1211,6 +1211,20 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
 .footer-information .footer-trial-card h2{margin:8px 0 18px!important}
 .footer-information .footer-trial-card p{margin:0 0 10px!important}
 
+@media(min-width:901px){
+  .dynamic .d-hero .hero-subcopy{white-space:nowrap!important}
+  .footer-information .footer-access .access-address span{display:block;white-space:nowrap;font-size:11px;letter-spacing:-.02em}
+  .footer-information .footer-trial-card>div{
+    position:absolute!important;
+    left:6%!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:44%!important;
+    max-width:360px!important;
+  }
+  .footer-information .footer-trial-card p{white-space:nowrap!important;font-size:11px!important;letter-spacing:-.02em}
+}
+
 @media(max-width:600px){
   .footer-information .footer-trial-card{
     min-height:0!important;
@@ -1230,6 +1244,10 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
     background:radial-gradient(circle at 86% 14%,rgba(245,123,156,.16),transparent 30%)!important;
   }
   .footer-information .footer-trial-card>div{
+    position:relative!important;
+    left:auto!important;
+    top:auto!important;
+    transform:none!important;
     width:100%!important;
     max-width:320px!important;
     text-align:center!important;
