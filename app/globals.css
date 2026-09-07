@@ -1200,7 +1200,7 @@ body,.dynamic,.schedule-site{color:var(--brand-ink)}
   position:absolute!important;
   inset:0!important;
   z-index:-1!important;
-  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 41%,rgba(255,255,255,.78) 55%,rgba(255,255,255,.08) 78%)!important;
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 38%,rgba(255,255,255,.4) 49%,rgba(255,255,255,.08) 66%,rgba(255,255,255,0) 78%)!important;
 }
 .footer-information .footer-trial-card>div{
   width:min(52%,340px)!important;
