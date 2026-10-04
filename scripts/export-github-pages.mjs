@@ -27,7 +27,9 @@ html = html
   .replace(/<script[\s\S]*?<\/script>/g, "")
   .replace(/<link rel="stylesheet"[^>]*>/, '<link rel="stylesheet" href="./site.css">')
   .replace(/(?:src|href)="\/(?!\/)/g, (match) => match.replace('"/', '"./'))
-  .replace(/url\((['"]?)\/(?!\/)/g, "url($1./");
+  .replace(/url\((['"]?)\/(?!\/)/g, "url($1./")
+  .replace(/url\(&#x27;\/(?!\/)/g, "url(&#x27;./")
+  .replace(/url\(&quot;\/(?!\/)/g, "url(&quot;./");
 
 css = css.replace(/url\((['"]?)\/(?!\/)/g, "url($1./");
 
@@ -38,6 +40,9 @@ await writeFile(path.join(output, ".nojekyll"), "");
 const rendered = await readFile(path.join(output, "index.html"), "utf8");
 if (!rendered.includes("SHINY☆GIRL") || !rendered.includes("無料体験に申し込む")) {
   throw new Error("Export verification failed");
+}
+if (/url\((?:['"]|&#x27;|&quot;)?\/(?!\/)/.test(rendered)) {
+  throw new Error("Export verification failed: an absolute background-image URL remains");
 }
 
 console.log(`GitHub Pages export written to ${output}`);
