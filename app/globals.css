@@ -871,12 +871,19 @@ body{background:#fff}
 .dynamic .trial-common{display:grid!important;grid-template-columns:minmax(360px,46%) minmax(0,54%)!important;min-height:620px!important;padding:0!important;background:#fff!important;color:#342f31!important;text-align:left!important;overflow:hidden}
 .dynamic .trial-common:before,.dynamic .trial-common:after{display:none!important}
 .dynamic .trial-common .trial-photo{grid-column:2;grid-row:1;min-height:620px;margin:0;background:url('/cta-trial-v2.png') center/cover no-repeat}
-.dynamic .trial-common .trial-copy{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:70px max(38px,calc((100vw - 1160px)/2));position:relative;z-index:1}
+.dynamic .trial-common .trial-copy{grid-column:1;grid-row:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-width:0;padding:70px clamp(32px,8%,72px);position:relative;z-index:1}
 .dynamic .trial-common .trial-copy>p{margin:0 0 25px;color:#ed416e;font-size:11px;font-weight:800;letter-spacing:.22em}
 .dynamic .trial-common .trial-copy h2{margin:0 0 28px;font-size:clamp(38px,4vw,58px);line-height:1.35;color:#352d30;white-space:nowrap}
 .dynamic .trial-common .trial-lead{max-width:520px;font-size:14px;line-height:2;color:#6f6367}
 .dynamic .trial-common .trial-copy>a{display:flex;width:max-content;margin:34px 0 18px;padding:18px 34px;border-radius:999px;background:#ed416e;color:#fff;font-weight:800}
 .dynamic .trial-common .trial-copy>small{font-size:12px;color:#453b3e}
+
+@media(min-width:901px) and (max-width:1100px){
+  .dynamic .trial-common{grid-template-columns:48% 52%!important}
+  .dynamic .trial-common .trial-copy{padding:60px 32px}
+  .dynamic .trial-common .trial-copy h2{font-size:clamp(36px,4.7vw,48px)}
+  .dynamic .trial-common .trial-lead{font-size:13px}
+}
 
 .footer-information .footer-trial-card{display:grid!important;grid-template-columns:minmax(0,52%) minmax(0,48%)!important;padding:0!important;background:#fff!important;background-image:none!important;overflow:hidden;align-items:stretch!important}
 .footer-information .footer-trial-card:after{display:none!important}
